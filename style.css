@@ -1,0 +1,31 @@
+body{
+    padding: 80px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.section-header {
+    display: inline-block;
+    padding: 20px 100px;
+    background-color: lightgrey;
+    border: 5px solid darkgrey;
+    border-radius: 20px;
+}
+
+.title{
+    font-weight: bolder;
+}
+
+.padded-left{
+    padding-left: 50px;
+}
+
+.accent{
+    font-weight: bold;
+}
+
+.disabled{
+    font-color: grey;
+}
