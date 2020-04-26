@@ -6,6 +6,13 @@ h1 {
     text-align: center;
 }
 
+.section-item::before {
+    width: 10px;
+    border-width: 4px 0 4px 4px;
+    border-color: black;
+    border-radius: 5px;
+}
+
 .section-header {
     display: inline-block;
     padding: 20px 100px;
@@ -28,4 +35,43 @@ h1 {
 
 .disabled{
     font-color: grey;
+}
+
+.cell {
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.top-10 {
+    top: 10px;
+}
+
+.right-10 {
+    right: 10px;
+}
+
+.left-10 {
+    left: 10px;
+}
+
+.bottom-10 {
+    bottom: 10px;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.m-0 {
+    margin: 0;
 }

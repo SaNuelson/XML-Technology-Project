@@ -31,8 +31,6 @@
                     <xsl:value-of select="/drm/@owner" />
                 </title>
 
-                <meta charset="utf-8" />
-
                 <link rel="stylesheet" type="text/css">
                     <xsl:attribute name="href">
                         <xsl:value-of select="$stylesheet" />
@@ -89,8 +87,7 @@
     <!-- Named templates -->
 
     <xsl:template name="game-transform">
-        <p> -- GAME BEGIN -- </p>
-        <div>
+        <div class="section-item">
             <xsl:attribute name="id">
                 <xsl:value-of select="@id-self" />
             </xsl:attribute>
@@ -121,7 +118,7 @@
             <div>
                 <xsl:choose>
                     <xsl:when test="achievements/achievement">
-                        <p>Achievements:</p>
+                        <h4>Achievements:</h4>
                         <xsl:choose>
                             <xsl:when test="$rights=$const-rights-full">
                                 <xsl:apply-templates select="achievements/achievement" mode="all" />
@@ -132,7 +129,7 @@
                         </xsl:choose>
                     </xsl:when>
                     <xsl:otherwise>
-                        <p>-- No achievements available --</p>
+                        <h4>-- No achievements available --</h4>
                     </xsl:otherwise>
                 </xsl:choose>
             </div>
@@ -140,17 +137,16 @@
             <div>
                 <xsl:choose>
                     <xsl:when test="ingame-store/ingame-item">
-                        <p>Store:</p>
+                        <h4>Store:</h4>
                         <xsl:apply-templates select="ingame-store/ingame-item" />
                     </xsl:when>
                     <xsl:otherwise>
-                        <p>-- No store available --</p>
+                        <h4>-- No store available --</h4>
                     </xsl:otherwise>
                 </xsl:choose>
             </div>
 
         </div>
-        <p> -- GAME END -- </p>
     </xsl:template>
 
     <xsl:template name="dev-transform">
@@ -181,6 +177,14 @@
 
             <h3 class="title padded-left">
                 <xsl:value-of select="name" />
+                <xsl:if test="website/@url">
+                    <a>
+                        <xsl:attribute name="href">
+                            <xsl:value-of select="website/@url"/>
+                        </xsl:attribute>
+                        <xsl:text>&#128279;</xsl:text>
+                    </a>
+                </xsl:if>
             </h3>
 
             <p>
@@ -192,17 +196,6 @@
             <p>
                 <xsl:value-of select="plain-description" />
             </p>
-
-            <p>
-                Website:
-                <a>
-                    <xsl:attribute name="href">
-                        <xsl:value-of select="website/@url" />
-                    </xsl:attribute>
-                    <xsl:text> here </xsl:text>
-                </a>
-            </p>
-
         </div>
     </xsl:template>
 
@@ -342,26 +335,22 @@
     </xsl:template>
 
     <xsl:template match="achievement" mode="all">
-        <div>
+        <div class="cell position-relative">
             <xsl:attribute name="id">
                 <xsl:value-of select="@id-self" />
             </xsl:attribute>
             <h3>
                 <xsl:value-of select="title" />
             </h3>
-            <xsl:choose>
-                <xsl:when test="secret">
-                    <p>
-                        <xsl:value-of select="plain-description" />
-                    </p>
-                </xsl:when>
-                <xsl:otherwise>
-                    <p>
-                        <xsl:text>Secret: </xsl:text> <!-- Make hideable -->
-                        <xsl:value-of select="plain-description" />
-                    </p>
-                </xsl:otherwise>
-            </xsl:choose>
+            <!-- Shows if the achievement is secret -->
+            <xsl:if test="secret">
+                <p class="position-absolute top-10 right-10 m-0 cell">
+                    ?
+                </p>
+            </xsl:if>
+            <p>
+                <xsl:value-of select="plain-description" />
+            </p>
             <p>
                 <xsl:text>External data: </xsl:text>
                 <xsl:value-of select="external-data" />
@@ -374,7 +363,7 @@
     </xsl:template>
 
     <xsl:template match="achievement" mode="public">
-        <div>
+        <div class="cell">
             <xsl:attribute name="id">
                 <xsl:value-of select="@id-self" />
             </xsl:attribute>
@@ -389,7 +378,7 @@
                 </xsl:when>
                 <xsl:otherwise>
                     <p>
-                        <xsl:text>Secret. You're not allowed to show this information.</xsl:text>
+                        <xsl:text>Pst! It's a secret.</xsl:text>
                     </p>
                 </xsl:otherwise>
             </xsl:choose>
@@ -405,9 +394,9 @@
     </xsl:template>
 
     <xsl:template match="ingame-item">
-        <div>
+        <div class="cell">
             <xsl:attribute name="id">
-                <xsl:value-of select="id-self" />
+                <xsl:value-of select="@id-self" />
             </xsl:attribute>
             <h3>
                 <xsl:value-of select="title" />
@@ -415,10 +404,12 @@
             <p>
                 <xsl:value-of select="plain-description" />
             </p>
-            <p>
-                <xsl:text>Max per user: </xsl:text>
-                <xsl:value-of select="max-per-user" />
-            </p>
+            <xsl:if test="max-per-user > 0">
+                <p>
+                    <xsl:text>Limit per user: </xsl:text>
+                    <xsl:value-of select="max-per-user" />
+                </p>
+            </xsl:if>
             <p>
                 <xsl:text>Price: </xsl:text>
                 <xsl:value-of select="price" />

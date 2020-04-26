@@ -187,60 +187,6 @@
                 </ingame-item>
             </ingame-store>
         </game>
-        <game id-self="g-3" id-dev="dev-sugar-powered" rating="E10PLUS">
-            <title>Alcheland</title>
-            <creation-date>2020-11-07</creation-date>
-            <description>
-				Oh, the alchemy. How alluring would it be to throw a lizard's tail and two troll eyes into the
-				pot, only to pull out a full health potion that gives you fire breath.
-				Too bad that's just a game fantasy and you can't achieve that in reality... except..
-				Welcome to the Alcheland, the perfect alternative reality for alchemy lovers.
-				We've got potions, we've got trolls with many useful body parts! We've even got weird
-				plants that try to eat you when you're out there to collect some samples.
-				
-				Set up your own alchemy shop in one of the small towns, explore the wilderness, collect 
-				ingredients, then combine them in your own brass kettle. Expand your knowledge, try out the
-				ingredients (preferably on others, not yourself), inspect the side effects, learn how to bypass
-				them. Need some muscle? Cave spider broth! Now you're blind? Some tea from carnivorous plant
-				should do the trick! Your left hand grew 2 more fingers? Butcher's down the street, have a great day!
-				
-				If you like this game, be sure to check out our other game: 
-                <general-reference id-reference="g-4">Geneloper</general-reference> here on Multiverse.
-            </description>
-            <reviews>
-                <review author="u-2">
-                    <creation-date>2021-01-06T13:23:34</creation-date>
-                    <text>click button to receive serotonin</text>
-                    <comment-section/>
-                </review>
-                <review author="u-12">
-                    <creation-date>2020-12-06T15:24:53</creation-date>
-                    <text>So much fun</text>
-                    <comment-section>
-                        <comment author="u-12">
-                            <creation-date>2020-12-06T03:03:03</creation-date>
-                            <text>So much fun</text>
-                            <reply-section/>
-                        </comment>
-                        <comment author="u-12">
-                            <creation-date>2020-12-06T19:28:36</creation-date>
-                            <text>So much fun</text>
-                            <reply-section/>
-                        </comment>
-                        <comment author="u-12">
-                            <creation-date>2020-12-06T06:06:06</creation-date>
-                            <text>I really need friends</text>
-                            <reply-section/>
-                        </comment>
-                    </comment-section>
-                </review>
-                <review author="u-16">
-                    <creation-date>22025-12-02T12:12:13</creation-date>
-                    <text>Am I late to the party?</text>
-                    <comment-section/>
-                </review>
-            </reviews>
-        </game>
         <game id-self="g-4" id-dev="dev-sugar-powered" rating="T">
             <title>Geneloper</title>
             <creation-date>2021-06-03</creation-date>
@@ -262,6 +208,10 @@
 				while doing it. The world is your oyster.
 				
 				You ARE the mad scientist locked up in his basement after all.
+
+
+                If you like this game, be sure to check out our other game:
+                <general-reference id-reference="g-3">Alcheland</general-reference> here on Multiverse.
             </description>
             <reviews>
                 <review author="u-8080">
@@ -304,6 +254,60 @@
                             </reply-section>
                         </comment>
                     </comment-section>
+                </review>
+            </reviews>
+        </game>
+        <game id-self="g-3" id-dev="dev-sugar-powered" rating="E10PLUS">
+            <title>Alcheland</title>
+            <creation-date>2020-11-07</creation-date>
+            <description>
+                Oh, the alchemy. How alluring would it be to throw a lizard's tail and two troll eyes into the
+                pot, only to pull out a full health potion that gives you fire breath.
+                Too bad that's just a game fantasy and you can't achieve that in reality... except..
+                Welcome to the Alcheland, the perfect alternative reality for alchemy lovers.
+                We've got potions, we've got trolls with many useful body parts! We've even got weird
+                plants that try to eat you when you're out there to collect some samples.
+
+                Set up your own alchemy shop in one of the small towns, explore the wilderness, collect
+                ingredients, then combine them in your own brass kettle. Expand your knowledge, try out the
+                ingredients (preferably on others, not yourself), inspect the side effects, learn how to bypass
+                them. Need some muscle? Cave spider broth! Now you're blind? Some tea from carnivorous plant
+                should do the trick! Your left hand grew 2 more fingers? Butcher's down the street, have a great day!
+
+                If you like this game, be sure to check out our other game:
+                <general-reference id-reference="g-4">Geneloper</general-reference> here on Multiverse.
+            </description>
+            <reviews>
+                <review author="u-2">
+                    <creation-date>2021-01-06T13:23:34</creation-date>
+                    <text>click button to receive serotonin</text>
+                    <comment-section/>
+                </review>
+                <review author="u-12">
+                    <creation-date>2020-12-06T15:24:53</creation-date>
+                    <text>So much fun</text>
+                    <comment-section>
+                        <comment author="u-12">
+                            <creation-date>2020-12-06T03:03:03</creation-date>
+                            <text>So much fun</text>
+                            <reply-section/>
+                        </comment>
+                        <comment author="u-12">
+                            <creation-date>2020-12-06T19:28:36</creation-date>
+                            <text>So much fun</text>
+                            <reply-section/>
+                        </comment>
+                        <comment author="u-12">
+                            <creation-date>2020-12-06T06:06:06</creation-date>
+                            <text>I really need friends</text>
+                            <reply-section/>
+                        </comment>
+                    </comment-section>
+                </review>
+                <review author="u-16">
+                    <creation-date>22025-12-02T12:12:13</creation-date>
+                    <text>Am I late to the party?</text>
+                    <comment-section/>
                 </review>
             </reviews>
         </game>
