@@ -129,7 +129,7 @@
                 <review author="u-7">
                     <creation-date>2021-03-12T16:32:38</creation-date>
                     <text>Difficult but fair. An extremely satisfying ending.</text>
-                    <comment-section></comment-section>
+                    <comment-section/>
                 </review>
             </reviews>
             <achievements>
@@ -211,7 +211,7 @@
                 <review author="u-2">
                     <creation-date>2021-01-06T13:23:34</creation-date>
                     <text>click button to receive serotonin</text>
-                    <comment-section></comment-section>
+                    <comment-section/>
                 </review>
                 <review author="u-12">
                     <creation-date>2020-12-06T15:24:53</creation-date>
@@ -220,24 +220,24 @@
                         <comment author="u-12">
                             <creation-date>2020-12-06T03:03:03</creation-date>
                             <text>So much fun</text>
-                            <reply-section></reply-section>
+                            <reply-section/>
                         </comment>
                         <comment author="u-12">
                             <creation-date>2020-12-06T19:28:36</creation-date>
                             <text>So much fun</text>
-                            <reply-section></reply-section>
+                            <reply-section/>
                         </comment>
                         <comment author="u-12">
                             <creation-date>2020-12-06T06:06:06</creation-date>
                             <text>I really need friends</text>
-                            <reply-section></reply-section>
+                            <reply-section/>
                         </comment>
                     </comment-section>
                 </review>
                 <review author="u-16">
                     <creation-date>22025-12-02T12:12:13</creation-date>
                     <text>Am I late to the party?</text>
-                    <comment-section></comment-section>
+                    <comment-section/>
                 </review>
             </reviews>
         </game>
@@ -360,7 +360,7 @@
                         <comment author="u-9">
                             <creation-date>2021-04-06T15:24:53</creation-date>
                             <text>Same. Dickbutt makes a homning lightning ball.</text>
-                            <reply-section></reply-section>
+                            <reply-section/>
                         </comment>
                     </comment-section>
                 </review>
@@ -426,7 +426,7 @@
 						Death is the most coolest character among all the Darksiders characters.
 						play this game i promise you,you wont regret it :D
                     </text>
-                    <comment-section></comment-section>
+                    <comment-section/>
                 </review>
                 <review author="u-3">
                     <creation-date>12020-01-02T06:02:28</creation-date>
@@ -434,7 +434,7 @@
 						Bigger than DS1, loot system and open world are 
 						both great and pain in the butt (collectibles).
                     </text>
-                    <comment-section></comment-section>
+                    <comment-section/>
                 </review>
             </reviews>
         </game>
